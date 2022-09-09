@@ -1,5 +1,9 @@
 # SONNM
 
+## Overview
+
+![Sitemap](./documents/sitemap.png)
+
 ## Cheatsheet
 
 1. The upgrade guide
