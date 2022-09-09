@@ -1,5 +1,5 @@
 // components/Layout.tsx
-import Meta from "./partials/Meta";
+import Meta from "./partials/meta-head";
 
 const Layout = ({ children }) => {
   return (
