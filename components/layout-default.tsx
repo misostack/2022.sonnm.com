@@ -1,4 +1,4 @@
-// components/Layout.tsx
+// components/layout-default.tsx
 import Meta from "./partials/meta-head";
 
 const Layout = ({ children }) => {
