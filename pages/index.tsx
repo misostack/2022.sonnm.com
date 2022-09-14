@@ -1,3 +1,6 @@
+import Layout from "../components/layout-default";
+import LayoutSingle from "../components/layout-single";
+
 export default function Home() {
   return (
     <>
@@ -19,3 +22,11 @@ export default function Home() {
     </>
   );
 }
+
+Home.getLayout = (page) => {
+  return (
+    <Layout>
+      <LayoutSingle>{page}</LayoutSingle>
+    </Layout>
+  );
+};
