@@ -41,3 +41,11 @@ declare module "react" {
   }
 }
 ```
+
+### Add routes for sitemap
+
+1. Home -> index.tsx
+2. Pages -> [pageSlug].tsx : contact, service's pages
+3. Case Studies -> case-studies/index.tsx case-studies/[slug].tsx
+4. Documents -> documents/index.tsx documents/[_id].tsx documents/[_id]/download.tsx
+5. Blog -> blog/index.tsx /blog/search.tsx blog/[categorySlug].tsx blog/posts/[postSlug].tsx
