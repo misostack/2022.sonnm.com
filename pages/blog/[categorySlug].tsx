@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Error from "../_error";
 
 export default () => {
   const router = useRouter();
   const categorySlug = router.query.categorySlug as string;
-
+  if (categorySlug === "posts") {
+    return <Error statusCode={404} />;
+  }
   return (
     <>
       <h1>Category {categorySlug}</h1>
