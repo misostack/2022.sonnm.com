@@ -4,7 +4,6 @@ import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import Link from "next/link";
 
 import { BlogCategoryModel } from "../../business/models/blog-category.model";
-import Error from "../_error";
 
 export default ({
   category,
@@ -46,6 +45,9 @@ export const getServerSideProps: GetServerSideProps<{
         statusCode: 301,
       },
     };
+  }
+  if (categorySlug === "500") {
+    throw new Error("Server Error!");
   }
   const category: BlogCategoryModel = {
     title: `Category [${categorySlug}]`,
