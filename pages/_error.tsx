@@ -1,14 +1,11 @@
-import LayoutSingle from "../components/layout-single";
 function Error({ statusCode }) {
   return (
-    <LayoutSingle>
-      <div className="container">
-        <h1>{statusCode}</h1>
-        {statusCode
-          ? `An error ${statusCode} occurred on server`
-          : "An error occurred on client"}
-      </div>
-    </LayoutSingle>
+    <div className="container">
+      <h1>{statusCode}</h1>
+      {statusCode
+        ? `An error ${statusCode} occurred on server`
+        : "An error occurred on client"}
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-export interface PageModel {
+export interface BlogPostModel {
   id: string;
   slug: string;
   title: string;

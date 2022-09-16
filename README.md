@@ -49,3 +49,6 @@ declare module "react" {
 3. Case Studies -> case-studies/index.tsx case-studies/[slug].tsx
 4. Documents -> documents/index.tsx documents/[_id].tsx documents/[_id]/download.tsx
 5. Blog -> blog/index.tsx /blog/search.tsx blog/[categorySlug].tsx blog/posts/[postSlug].tsx
+6. Search -> search/index.tsx
+
+### Defined ServerSideProps
