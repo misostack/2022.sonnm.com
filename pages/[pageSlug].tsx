@@ -1,3 +1,4 @@
+import enviroment from "@config/enviroment";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { PageModel } from "../business/models";
@@ -28,6 +29,7 @@ export const getStaticProps: GetStaticProps<{ page: PageModel }> = async ({
   params,
 }) => {
   const pageSlug = (params["pageSlug"] as string) || "";
+  console.log("enviroment.PRIVATE_API_TOKEN", enviroment.PRIVATE_API_TOKEN);
   const page: PageModel = {
     title: `Page with slug = ${pageSlug} ${new Date().toISOString()}`,
     slug: pageSlug,
