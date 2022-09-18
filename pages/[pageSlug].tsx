@@ -19,7 +19,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths,
     // don't build static page at build time, keep it for the 1st request
     // to reduce build time
-    fallback: true,
+    fallback: "blocking", // is called before initial render
+    // fallback: true, // runs in the background - lazy load with ajax + json
   };
 };
 
@@ -28,7 +29,7 @@ export const getStaticProps: GetStaticProps<{ page: PageModel }> = async ({
 }) => {
   const pageSlug = (params["pageSlug"] as string) || "";
   const page: PageModel = {
-    title: `Page with slug = ${pageSlug}`,
+    title: `Page with slug = ${pageSlug} ${new Date().toISOString()}`,
     slug: pageSlug,
     content: `Content of page with slug = ${pageSlug}`,
     featureImage: "",
@@ -38,5 +39,6 @@ export const getStaticProps: GetStaticProps<{ page: PageModel }> = async ({
     props: {
       page,
     },
+    revalidate: 3, // In seconds
   };
 };

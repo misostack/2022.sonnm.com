@@ -7,3 +7,7 @@ declare module "react" {
     global?: boolean;
   }
 }
+
+declare global {
+  var GLOBAL_VARIABLES: any;
+}
