@@ -20,8 +20,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths,
     // don't build static page at build time, keep it for the 1st request
     // to reduce build time
-    fallback: "blocking", // is called before initial render
-    // fallback: true, // runs in the background - lazy load with ajax + json
+    // fallback: "blocking", // is called before initial render
+    fallback: true, // runs in the background - lazy load with ajax + json
   };
 };
 
