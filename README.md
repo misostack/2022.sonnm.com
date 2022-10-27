@@ -9,10 +9,10 @@
 1. [x] Create a Sitemap
 2. [ ] Check the design and choose a proper UI Framework. Such as: TailwindCSS(Atomic CSS Framework), Ant Design(Atomic CSS Framework included built-in ReactJS Components), Material, Bootstrap, Bulma, ...
 3. [ ] Create the relevant page routes
-4. [ ] Apply code clean standard
+4. [ ] Apply code clean standard: seperate UI and business logic
 5. [ ] Breakdown design into smaller components: global styles, components
 6. [ ] Create page details : collect bricks and build a fully page with fake data
-7. [ ] Create page interaction : handle user's interaction
+7. [ ] Create page interaction : handle user's interaction : state, form validation,...
 8. [ ] Integrate with API : they can be http request, websocket and they can be restful api or graphql. Should write test for your api integration ( use mocks & stubs if needed)
 9. [ ] Think about the infrastructure and setup your continuous deployment process
 10. [ ] Test your application
